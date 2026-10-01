@@ -1,0 +1,71 @@
+{
+  "model_name": "Isolation Forest Healthy Baseline Anomaly Detector",
+  "version": "iforest-v1",
+  "trained_at": "2026-10-01T05:51:45Z",
+  "features": [
+    "air_c",
+    "proc_c",
+    "temp_gap_c",
+    "rpm",
+    "torque",
+    "wear",
+    "power_w"
+  ],
+  "p1": -0.09096591197617258,
+  "p99": 0.11792074691009811,
+  "threshold": 0.7456414169353424,
+  "training_rows": 7728,
+  "validation_rows": 1933,
+  "sha256_fingerprint": "3f0a9936bfe191cb4b4d295451ddb9873c51d0bdfd651a90e6ca170b9dbfec9d",
+  "feature_means": {
+    "air_c": 26.82399855087465,
+    "proc_c": 36.84556981678916,
+    "temp_gap_c": 10.0215712659145,
+    "rpm": 1540.2600144912535,
+    "torque": 39.62965531518476,
+    "wear": 106.69371700652107,
+    "power_w": 6244.547518890384
+  },
+  "feature_stds": {
+    "air_c": 1.9907479694438195,
+    "proc_c": 1.4868460647646986,
+    "temp_gap_c": 0.9884218211367647,
+    "rpm": 167.39473403228348,
+    "torque": 9.472080111077105,
+    "wear": 62.94579046389409,
+    "power_w": 1011.3944018716801
+  },
+  "metrics": {
+    "roc_auc": 0.858,
+    "precision": 0.2518,
+    "recall": 0.41,
+    "f1_score": 0.312,
+    "flagged_per_failure_type": {
+      "TWF": {
+        "total": 46,
+        "flagged": 5,
+        "percentage": 10.87
+      },
+      "HDF": {
+        "total": 115,
+        "flagged": 27,
+        "percentage": 23.48
+      },
+      "PWF": {
+        "total": 95,
+        "flagged": 87,
+        "percentage": 91.58
+      },
+      "OSF": {
+        "total": 98,
+        "flagged": 41,
+        "percentage": 41.84
+      },
+      "RNF": {
+        "total": 19,
+        "flagged": 1,
+        "percentage": 5.26
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "model_name": "CWRU Bearing Fault Classifier",
+  "version": "cwru-rf-v1",
+  "trained_at": "2026-10-01T09:54:22Z",
+  "features": [
+    "rms",
+    "peak",
+    "peak_to_peak",
+    "crest_factor",
+    "kurtosis",
+    "skewness",
+    "std",
+    "fft_band_0",
+    "fft_band_1",
+    "fft_band_2",
+    "fft_band_3",
+    "fft_band_4",
+    "fft_band_5",
+    "fft_band_6",
+    "fft_band_7"
+  ],
+  "classes": [
+    "ball",
+    "inner_race",
+    "normal",
+    "outer_race"
+  ],
+  "split_method": "load_split",
+  "split_description": "Train on loads 0,1,2 HP \u2014 Test on load 3 HP (no window leakage)",
+  "train_windows": 120,
+  "test_windows": 40,
+  "sha256_fingerprint": "8df45d50210895e0c2d849fd8ebf119220bbf39d4edcc64af568495ebb28a51b",
+  "metrics": {
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "ball": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "inner_race": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "outer_race": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      }
+    },
+    "feature_importances": {
+      "rms": 0.038,
+      "peak": 0.0463,
+      "peak_to_peak": 0.0397,
+      "crest_factor": 0.046,
+      "kurtosis": 0.0368,
+      "skewness": 0.0478,
+      "std": 0.0401,
+      "fft_band_0": 0.008,
+      "fft_band_1": 0.0944,
+      "fft_band_2": 0.1056,
+      "fft_band_3": 0.05,
+      "fft_band_4": 0.1217,
+      "fft_band_5": 0.107,
+      "fft_band_6": 0.112,
+      "fft_band_7": 0.1064
+    }
+  }
+}
