@@ -6,6 +6,7 @@ __pycache__/
 # Environments
 .env
 .venv
+.venv*/
 env/
 venv/
 ENV/
@@ -14,6 +15,7 @@ ENV/
 data/*.csv
 data/*.zip
 data/cwru/*.mat
+data/*.db
 
 # ML Model binaries (ignore joblib, keep metadata json)
 models/*.joblib
