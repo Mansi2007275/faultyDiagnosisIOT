@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data
+data/*.csv
+data/*.zip
+data/cwru/*.mat
+
+# ML Model binaries (ignore joblib, keep metadata json)
+models/*.joblib
+
+# Streamlit & Cache
+.streamlit/
+.pytest_cache/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Hardhat & Smart Contracts
+contracts/node_modules/
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
